@@ -1,0 +1,25 @@
+Environment Variables Setup
+=============================
+
+Create a .env.local file in the root directory with:
+
+# Supabase Configuration
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+# LiveKit Configuration
+LIVEKIT_API_KEY=your_livekit_api_key
+LIVEKIT_API_SECRET=your_livekit_api_secret
+NEXT_PUBLIC_LIVEKIT_URL=wss://your-livekit-server.com
+
+Supabase Setup:
+1. Go to https://supabase.com
+2. Create a new project or select an existing one
+3. Go to Settings > API
+4. Copy the Project URL and anon/public key
+
+LiveKit Setup:
+1. Go to https://livekit.io or set up your own LiveKit server
+2. Get your API key and secret from the LiveKit dashboard
+3. Set the LiveKit URL (WebSocket URL, e.g., wss://your-server.livekit.cloud)
+4. Make sure your LiveKit server has an agent endpoint configured for voice assistants
